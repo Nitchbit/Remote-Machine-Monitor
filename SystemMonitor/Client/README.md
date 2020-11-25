@@ -1,43 +1,36 @@
-#### CLIENT
+## CLIENT
 
-Queste componenti servono per la parte di esposizione delle metriche.
-Per installare le compononeti, bisogna eseguire download.sh e scegliere ciò di cui si ha bisogno. Diamo la possibilità di esporre solo le metriche dei container docker o quelle dell'intera macchina o entrambe.
+These components allow you to expose metrics
+To install the components you need to execute [download.sh](download.sh) and choose what you need.
+You can choose to expose both container's metrics and pc's metrics.
 
-Nel primo caso verrà installato docker, e verrà scaricata l'immagine del container cadvisor ovvero google/cadvisor. Nel secondo caso verrà installato il servizio prometheus-node-exporter. In caso si vogliano provare entrambe verrano installate tutte le componenti.
+If you want to see container's metrics, the script will install docker and an image of a container with google/cAdvisor pre-installed.
+Otherwise, if you choose single pc's metrics, the script will install prometheus node exporter service.
 
-Una volta installate, si puo' procedere all'avvio dei servizi in questo modo:
+You can always choose to install both of them.
 
-#### cAdvisor 
+## cAdvisor
 
-- aprire un terminale con il path della cartella Docker_comps;
-- lanciare il comando	
-```
-make up_cAdvisor
-```
-- a questo punto cAdvisor sara' attivo e disponibile all'indirizzo http://localhost:8080
-- per terminare l'esecuzione del container cAdvisor lanciare il comando
-```
-make down_cAdvisor
-```
+cAdvisor is the tool that expose the metrics on the 8080 port by default.
+To start cAdvisor service do as follows:
+- open a terminal in the docker_test folder;
+- execute the command: ```make up_cAdvisor```;
+- if the whole procedure ends without errors you can see cAdvisor service on http://localhost:8080;
+- to end the execution of cAdvisor service execute the command: ```make down_cAdvisor```;
 
-Per avere dettagli piu' approfinditi su come viene avviato cAdvisor, vedere il file 
-docker-compose.yml o consultare questa [pagina](https://github.com/google/cadvisor)
+For more details on cAdvisor:
+- [docker-compose.yml](docker-compose.yml)
+- [cAdvisor](https://github.com/google/cadvisor)
 
+## Node-Exporter
 
+Node Exporter is a plugin on Prometheus that allow you to expose metrics from a single linux pc on the 9100 port by default.
+To start Node Exporter service do as follows:
+- open a terminal in the docker_test folder;
+- execute the command: ```make up_node_exporter```;
+- if the whole procedure ends without errors you can see Node Exporter service on http://localhost:9100;
+- to end execution of Node Exporter service execute the command: ```make down up_node_exporter```
 
-#### Node-exporter
-
-- aprire un terminale con il path della cartella Docker_test;
-- lanciare il comando
-```
-make up_node_exporter
-```
-- a questo punto node-exporter sara' attivo e disponibile all'indirizzo http://localhost:9100
-- per terminare l'esecuzione del servizio lanciare il comando
-```
-make down up_node_exporter
-```
-Per avere dettagli piu' approfinditi su come viene avviato node-exporter, vedere il file Makefile, all'interno della cartella NodeExporter_comps e visita questo [sito](https://github.com/prometheus/node_exporter)
-
-
-
+For more details on Node Exporter:
+- [Makefile](Makefile)
+- [Node Exporter](https://github.com/prometheus/node_exporter)
