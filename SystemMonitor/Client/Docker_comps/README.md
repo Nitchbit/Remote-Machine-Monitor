@@ -1,14 +1,12 @@
-In questa cartella si trovano gli strumenti per testare il
-corretto funionamento dell'infrastruttura appena creata.
+## Docker_comps
+This folder contains all the tools you need to test the infrastracture.
 
-Per funzionare c'e' bisogno del README della cartella dal
-quale siete venuti. Se avete completato tutto, allora siete
-pronti per iniziare.
+### Requirements
+You need to follow this [README](Client/README) to procede as follows.
 
-**Primo passo**
-```
-make all
-```
+**First Step**
+
+```make all```
 Verra' scaricata l'immagine di ubuntu da questo
 [link](https://hub.docker.com/_/ubuntu), dal quale verranno create
 altre tre immagini che saranno gli effettivi test da eseguire.
