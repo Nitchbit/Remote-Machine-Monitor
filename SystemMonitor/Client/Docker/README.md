@@ -17,12 +17,12 @@ The result of these tests is to verify that cAdvisor can detect the overload on 
 
 You can execute them simultaneously with ```make all_tests```.
 
-To test them individually:
-**CPU**: ```make cpu_test```
-**RAM**: ```make ram_test```
-**STORAGE**: ```make disco_test```
+To test them individually:\
+**CPU**: ```make cpu_test```\
+**RAM**: ```make ram_test```\
+**STORAGE**: ```make disco_test```\
 
-**CLEAN UP**
+**CLEAN UP**\
 After you have done as written above, cAdvisor service could be still active, so you can do as follows to stop it: ```make down_cAdvisor```.
 To clean your system from all of the test files: ```make cleanup```
 
