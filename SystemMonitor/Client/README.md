@@ -39,7 +39,8 @@ For more details on Node Exporter:
 
 Prometheus allows you to scrape the metrics exposed by cAdvisor or Node Exporter. The system provides a default configuration file that is ready to go.
 Make sure to overwrite the configuration file located by /etc/prometheus/prometheus.yml with this [file](prometheus.yml).
-If you can't find prometheus following the above path, make sure to read the [prometheus documentation](https://prometheus.io/docs/introduction/overview/)
+If you can't find prometheus following the above path, make sure to read the [prometheus documentation](https://prometheus.io/docs/introduction/overview/).
+You can run Prometheus with ```sudo systemctl start prometheus```.
 
 ### Prometheus Configuration
 The correct functioning of the architecture is based on the syncronization between Grafana's query and the Prometheus configuration.
