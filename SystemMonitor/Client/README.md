@@ -50,3 +50,4 @@ The job_name inside the configuration are:
 
 **Warning**:
 If you choose to change these names inside the /etc/prometheus/prometheus.yml file, make sure to change the queries accordingly.
+Once you have changed the prometheus.yml make sure to restart the service.
