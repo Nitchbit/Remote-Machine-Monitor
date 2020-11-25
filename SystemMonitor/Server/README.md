@@ -4,7 +4,7 @@ Grafana Image Renderer is a Grafana plugin that is needed if you want to setup a
 
 ## Grafana Configuration
 First thing first, you need to start Grafana service and check if it's working correctly.
-You can do it executing on a terminal the folowing command: '''sudo systemctl start grafana-server''', and check it on [http://localhost:3000/](http://localhost:3000/).
+You can do it executing on a terminal the folowing command: ```sudo systemctl start grafana-server```, and check it on [http://localhost:3000/](http://localhost:3000/).
 
 Second of all you need to set up your grafana account following the instruction provided by [Grafana Documentation](https://grafana.com/docs/grafana/latest/getting-started/getting-started/), then you can create your first dashboard.
 The SystemMonitor provides some dashboard templates: 
