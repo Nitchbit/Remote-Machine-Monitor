@@ -4,7 +4,7 @@ This folder contains all the tools you need to test the infrastracture.
 ### Requirements
 You need to follow this [README](https://github.com/Nitchbit/Tumino-Sergi/blob/main/SystemMonitor/Client/README.md) to procede as follows.
 
-**First Step**\
+##First Step
 Open a terminal in the Docker folder and execute ```make all```.
 It will download the Ubuntu image from [link](https://hub.docker.com/_/ubuntu) and, based on that, it will create the tests images.
 
@@ -20,7 +20,7 @@ You can execute them simultaneously with ```make all_tests```.
 To test them individually:\
 **CPU**: ```make cpu_test```\
 **RAM**: ```make ram_test```\
-**STORAGE**: ```make disco_test```\
+**STORAGE**: ```make disco_test```
 
 **CLEAN UP**\
 After you have done as written above, cAdvisor service could be still active, so you can do as follows to stop it: ```make down_cAdvisor```.
