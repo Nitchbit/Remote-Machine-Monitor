@@ -47,5 +47,5 @@ The job_name inside the configuration are:
 - node -> for single linux pc
 - cluster -> for a docker cluster of container
 
--**Warning**
+```-**Warning**```:
 If you choose to change these names inside the /etc/prometheus/prometheus.yml file, make sure to change the queries accordingly.
