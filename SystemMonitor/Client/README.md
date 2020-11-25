@@ -13,7 +13,7 @@ You can always choose to install both of them.
 
 cAdvisor is the tool that expose the metrics on the 8080 port by default.
 To start cAdvisor service do as follows:
-- open a terminal in the docker_test folder;
+- open a terminal in the Docker folder;
 - execute the command: ```make up_cAdvisor```;
 - if the whole procedure ends without errors you can see cAdvisor service on http://localhost:8080;
 - to end the execution of cAdvisor service execute the command: ```make down_cAdvisor```;
@@ -26,10 +26,10 @@ For more details on cAdvisor:
 
 Node Exporter is a plugin on Prometheus that allow you to expose metrics from a single linux pc on the 9100 port by default.
 To start Node Exporter service do as follows:
-- open a terminal in the docker_test folder;
+- open a terminal in the NodeExporter folder;
 - execute the command: ```make up_node_exporter```;
 - if the whole procedure ends without errors you can see Node Exporter service on http://localhost:9100;
-- to end execution of Node Exporter service execute the command: ```make down up_node_exporter```
+- to end execution of Node Exporter service execute the command: ```make down_node_exporter```
 
 For more details on Node Exporter:
 - [Makefile](NodeExporter_comps/Makefile)

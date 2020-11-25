@@ -1,8 +1,8 @@
 #!/bin/bash
-echo "Vuoi installare:
-( D ) - le componenti per i container docker;
-( C ) - quelle per monitoring della tua macchina;
-( E ) - entrambi;"
+echo "Which system do you want to monitor?
+( D ) - Docker's cluster;
+( C ) - Linux pc;
+( E ) - both;"
 read scelta
 #docker components installation
 if [ "$scelta" = "D" ]; then
@@ -19,5 +19,5 @@ elif [ "$scelta" = "E" ]; then
 	sudo docker pull google/cadvisor
 	sudo apt-get -y install prometheus-node-exporter
 else
-	echo "Comando non riconosciuto."
+	echo "Option not reconized."
 fi
