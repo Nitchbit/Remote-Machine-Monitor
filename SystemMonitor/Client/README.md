@@ -14,9 +14,9 @@ You can always choose to install both of them.
 cAdvisor is the tool that expose the metrics on the 8080 port by default.
 To start cAdvisor service do as follows:
 - open a terminal in the Docker folder;
-- execute the command: ```make up_cAdvisor```;
+- execute the command ```make up_cAdvisor```;
 - if the whole procedure ends without errors you can see cAdvisor service on http://localhost:8080;
-- to end the execution of cAdvisor service execute the command: ```make down_cAdvisor```;
+- to end the execution of cAdvisor service execute ```make down_cAdvisor```;
 
 For more details on cAdvisor:
 - [docker-compose.yml](Docker_comps/docker-compose.yml)
