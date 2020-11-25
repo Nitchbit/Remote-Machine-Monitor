@@ -4,14 +4,14 @@ This folder contains all the tools you need to test the infrastracture.
 ### Requirements
 You need to follow this [README](https://github.com/Nitchbit/Tumino-Sergi/blob/main/SystemMonitor/Client/README.md) to procede as follows.
 
-**First Step**
+**First Step**\
 Open a terminal in the Docker folder and execute ```make all```.
 It will download the Ubuntu image from [link](https://hub.docker.com/_/ubuntu) and, based on that, it will create the tests images.
 
-**Second Step**
+**Second Step**\
 ```make up_cAdvisor``` will execute the cAdvisor container and you are ready to go. You can check it on [link](http://localhost:8080).
 
-**Third Step**
+**Third Step**\
 You are now ready to do some tests. We provide to you three tests, based on CPU, RAM and Storage.
 The result of these tests is to verify that cAdvisor can detect the overload on these three components and expose the correct metrics.
 
