@@ -29,7 +29,7 @@ To start Node Exporter service do as follows:
 - open a terminal in the NodeExporter folder;
 - execute ```make up_node_exporter```;
 - if the whole procedure ends without errors you can see Node Exporter service on http://localhost:9100;
-- to end execution of Node Exporter service execute the command: ```make down_node_exporter```
+- to end execution of Node Exporter service execute ```make down_node_exporter```;
 
 For more details on Node Exporter:
 - [Makefile](NodeExporter_comps/Makefile)
@@ -47,7 +47,5 @@ The job_name inside the configuration are:
 - node -> for single linux pc
 - cluster -> for a docker cluster of container
 
-```diff
-- Warning
-```:
+**Warning**:
 If you choose to change these names inside the /etc/prometheus/prometheus.yml file, make sure to change the queries accordingly.
