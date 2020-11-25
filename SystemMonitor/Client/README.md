@@ -19,7 +19,7 @@ To start cAdvisor service do as follows:
 - to end the execution of cAdvisor service execute the command: ```make down_cAdvisor```;
 
 For more details on cAdvisor:
-- [docker-compose.yml](SystemMonitor/Client/Docker_comps/docker-compose.yml)
+- [docker-compose.yml](Docker_comps/docker-compose.yml)
 - [cAdvisor](https://github.com/google/cadvisor)
 
 ## Node-Exporter
