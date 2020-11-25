@@ -1,7 +1,7 @@
 # Tumino - Sergi
 
-## System Monitor
+## System Monitor [Folder](System Monitor)
 
-## Server
+## Server [Folder](Server)
 
 ## Client
