@@ -32,5 +32,5 @@ To start Node Exporter service do as follows:
 - to end execution of Node Exporter service execute the command: ```make down up_node_exporter```
 
 For more details on Node Exporter:
-- [Makefile](Makefile)
+- [Makefile](NodeExporter_comps/Makefile)
 - [Node Exporter](https://github.com/prometheus/node_exporter)
