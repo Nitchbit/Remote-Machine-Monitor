@@ -2,7 +2,7 @@
 This folder contains all the tools you need to test the infrastracture.
 
 ### Requirements
-You need to follow this [README](SystemMonitor/Client/README) to procede as follows.
+You need to follow this [README](Tumino-Sergi/SystemMonitor/Client/README) to procede as follows.
 
 **First Step**
 Open a terminal in the Docker_comps folder and execute this command: ```make all```.
