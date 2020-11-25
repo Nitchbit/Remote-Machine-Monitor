@@ -48,4 +48,4 @@ The job_name inside the configuration are:
 - cluster -> for a docker cluster of container
 
 **Warning**:
-If you choose to change this name inside the /etc/prometheus/prometheus.yml file, make sure to change the queries accordingly.
+If you choose to change these names inside the /etc/prometheus/prometheus.yml file, make sure to change the queries accordingly.
