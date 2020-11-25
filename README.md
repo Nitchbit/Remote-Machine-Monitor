@@ -1,7 +1,7 @@
 # Tumino - Sergi
 
-## SystemMonitor [Folder](SystemMonitor)
+## [SystemMonitor](SystemMonitor)
 
-## Server [Folder](SystemMonitor/Server)
+## [Server](SystemMonitor/Server)
 
-## Client [Folder](SystemMonitor/Client)
+## [Client](SystemMonitor/Client)
