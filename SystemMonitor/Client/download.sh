@@ -6,12 +6,15 @@ echo "Vuoi installare:
 read scelta
 #docker components installation
 if [ "$scelta" = "D" ]; then
+	sudo apt install -y prometheus
 	sudo apt-get -y install docker
 	sudo docker pull google/cadvisor
 elif [ "$scelta" = "C" ]; then
-	#prometheus configuration
+#prometheus installation
+	sudo apt install -y prometheus
 	sudo apt-get -y install prometheus-node-exporter
 elif [ "$scelta" = "E" ]; then
+	sudo apt install -y prometheus
 	sudo apt-get -y install docker
 	sudo docker pull google/cadvisor
 	sudo apt-get -y install prometheus-node-exporter
