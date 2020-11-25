@@ -2,6 +2,6 @@
 
 ## System Monitor [Folder](SystemMonitor)
 
-## Server [Folder](Server)
+## Server [Folder](SystemMonitor/Server)
 
 ## Client
