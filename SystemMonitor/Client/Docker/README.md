@@ -1,4 +1,4 @@
-## Docker_comps
+## Docker folder
 This folder contains all the tools you need to test the infrastracture.
 
 ### Requirements
@@ -22,8 +22,8 @@ To test them individually:\
 **RAM**: ```make ram_test```\
 **STORAGE**: ```make disco_test```
 
-### CLEAN UP
+### Clean up
 After you have done as written above, cAdvisor service could be still active, so you can do as follows to stop it: ```make down_cAdvisor```.
-To clean your system from all of the test files: ```make cleanup```
+To clean your system from all of the test files: ```make cleanup```.
 
-To delete cAdvisor service from your system: ```docker image rm -f cAdvisor```
+To delete cAdvisor service from your system use ```docker image rm -f cAdvisor```.
