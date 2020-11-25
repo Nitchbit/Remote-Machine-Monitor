@@ -1,4 +1,4 @@
-## CLIENT
+# CLIENT
 
 These components allow you to expose metrics
 To install the components you need to execute [download.sh](download.sh) and choose what you need.
@@ -34,3 +34,18 @@ To start Node Exporter service do as follows:
 For more details on Node Exporter:
 - [Makefile](NodeExporter_comps/Makefile)
 - [Node Exporter](https://github.com/prometheus/node_exporter)
+
+## Prometheus
+
+Prometheus allows you to scrape the metrics exposed by cAdvisor or Node Exporter. The system provides a default configuration file that is ready to go.
+Make sure to overwrite the configuration file located by /etc/prometheus/prometheus.yml with this [file](prometheus.yml).
+If you can't find prometheus following the above path, make sure to read the [prometheus documentation](https://prometheus.io/docs/introduction/overview/)
+
+### Prometheus Configuration
+The correct functioning of the architecture is based on the syncronization between Grafana's query and the Prometheus configuration.
+The job_name inside the configuration are:
+- node -> for single linux pc
+- cluster -> for a docker cluster of container
+
+**Warning**:
+If you choose to change this name inside the /etc/prometheus/prometheus.yml file, make sure to change the queries accordingly.
