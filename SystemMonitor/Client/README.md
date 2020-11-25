@@ -1,20 +1,15 @@
 #### CLIENT
+
 Queste componenti servono per la parte di esposizione delle metriche.
+Per installare le compononeti, bisogna eseguire download.sh e scegliere ciò di cui si ha bisogno. Diamo la possibilità di esporre solo le metriche dei container docker o quelle dell'intera macchina o entrambe.
 
-Per installare le compononeti, bisogna eseguire comps_download.sh e scegliere ciò di cui si ha bisogno.
-
-Diamo la possibilità di esporre solo le metriche dei container docker o quelle dell'intera macchina o entrambe.
-
-Nel primo caso verrà installato docker, e verrà scaricata l'immagine del container cadvisor ovvero google/cadvisor.
-Nel secondo caso verrà installato il servizio prometheus-node-exporter.
-
-In caso si vogliano provare entrambe verrano installate tutte le componenti.
+Nel primo caso verrà installato docker, e verrà scaricata l'immagine del container cadvisor ovvero google/cadvisor. Nel secondo caso verrà installato il servizio prometheus-node-exporter. In caso si vogliano provare entrambe verrano installate tutte le componenti.
 
 Una volta installate, si puo' procedere all'avvio dei servizi in questo modo:
 
 #### cAdvisor 
 
-- aprire un terminale con il path della cartella Docker_test;
+- aprire un terminale con il path della cartella Docker_comps;
 - lanciare il comando	
 ```
 make up_cAdvisor
