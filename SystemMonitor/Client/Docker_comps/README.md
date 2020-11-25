@@ -5,68 +5,27 @@ This folder contains all the tools you need to test the infrastracture.
 You need to follow this [README](Client/README) to procede as follows.
 
 **First Step**
+Open a terminal in the Docker_comps folder and execute this command: ```make all```.
+It will download the Ubuntu image from [link](https://hub.docker.com/_/ubuntu) and, based on that, it will create the tests images.
 
-```make all```
-Verra' scaricata l'immagine di ubuntu da questo
-[link](https://hub.docker.com/_/ubuntu), dal quale verranno create
-altre tre immagini che saranno gli effettivi test da eseguire.
+**Second Step**
+```make up_cAdvisor```.
+It will execute the cAdvisor container and you are ready to go.
+You can check it on: [link](http://localhost:8080).
 
+**Third Step**
+You are noe ready to do some test. We provide to you three test, based on CPU, RAM and Storage.
+The result of these tests is to verify that cAdvisor can detect the overload on these three components and expose the correct metrics.
 
-**Secondo passo**
-```
-make up_cAdvisor
-```
-Avviera' un container che ha integrto cAdvisor e sara' gia' pronto
-per l'uso. Per verificare che funzioni, aprire il seguente [link](http://localhost:8080).
+You can execute them simultaneously: ```make all_tests```
 
-**Terzo passo**
-Ora siamo pronti per effettuare i test.
-Si sviluppano su tre rami principali: cpu, ram e disco.
-L'obiettivo di questi test e' quello di verificare se cAdvisor
-riesce a vedere correttamente le metriche dei container avviati
-sulla macchina, quindi andranno a caricare cpu, ram e disco.
+To test them individually:
+**CPU**: ```make cpu_test```
+**RAM**: ```make ram_test```
+**STORAGE**: ```make disco_test```
 
-Per effettuarli tutti e tre contemporaneamente
-```
-make all_tests
-```
+**CLEAN UP**
+After you have done as written above, cAdvisor service could be still active, so you can do as follows to stop it: ```make down_cAdvisor```.
+To clean your system from all of the test files: ```make cleanup```
 
-Mentre se si vuole testare una componente in particolare
-
-**CPU**
-```
-make cpu_test
-```
-
-**RAM**
-```
-make ram_test
-```
-
-**DISCO**
-```
-make disco_test
-```
-
-**CONCLUSIONE**
-Se avete seguito questi passi, avrete ancora cAdvisor attivo.
-Per fermarlo bisogna lanciare il comando
-```
-make down_cAdvisor
-```
-che fermera' il container.
-
-Per ripulire il pc dai file di test
-```
-make cleanup
-```
-rimuovera' tutte le immagini create per i test, e l'immagine di
-ubuntu utilizzata per la loro creazione.
-
-Se si vuole rimuovere anche cAdvisor dalla propria macchina eventualmente lanciare il seguente comado
-```
-docker image rm -f cAdvisor
-```
-
-
-
+To delete cAdvisor service from your system: ```docker image rm -f cAdvisor```
