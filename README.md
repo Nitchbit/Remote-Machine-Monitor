@@ -1,6 +1,6 @@
 # Tumino - Sergi
 
-## System Monitor [Folder](SystemMonitor)
+## SystemMonitor [Folder](SystemMonitor)
 
 ## Server [Folder](SystemMonitor/Server)
 
