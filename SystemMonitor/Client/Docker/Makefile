@@ -18,8 +18,7 @@ up_cAdvisor:
   --name=cadvisor \
   --privileged \
   --device=/dev/kmsg \
-  google/cadvisor
-	#docker-compose up
+  gcr.io/google-containers/cadvisor
 
 all_tests:
 	docker run test_cpu &
