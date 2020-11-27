@@ -14,8 +14,8 @@ The only component on the server side is grafana, as explained by this [document
 ## [Client](SystemMonitor/Client)
 
 The client rappresent the system to be monitored, is composed by three tools:
-- Prometheus
-- Promtheus Node Exporter and/or cAdvisor
-- Docker containers
+- [Prometheus](SystemMonitor/Client/README.md)
+- [Promtheus Node Exporter and/or cAdvisor](SystemMonitor/Client/README.md)
+- [Docker containers](SystemMonitor/Client/README.md)
 
 Prometheus scrape the metrics from Node Exporter and/or cAdvisor and it receives queries from Grafana to show the result with graphs.
