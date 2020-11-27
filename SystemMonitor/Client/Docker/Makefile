@@ -36,7 +36,7 @@ disco_test:
 	docker run test_disco
 
 down_cAdvisor:
-	docker-compose down
+	sudo docker container kill cadvisor
 
 cleanup:
 	docker-compose down
