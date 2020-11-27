@@ -38,7 +38,6 @@ down_cAdvisor:
 	sudo docker container kill cadvisor
 
 cleanup:
-	docker-compose down
 	docker image rm -f test_cpu
 	docker image rm -f test_ram
 	docker image rm -f test_disco
