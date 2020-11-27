@@ -8,8 +8,8 @@ You can do it executing ```sudo systemctl start grafana-server``` on a terminal,
 
 Second of all you need to set up your grafana account following the instruction provided by [Grafana Documentation](https://grafana.com/docs/grafana/latest/getting-started/getting-started/), then you can create your first dashboard.
 The SystemMonitor provides some dashboard templates: 
-- Linux PC Metrics -> to monitor a single pc running a linux system;
-- Cluster Docker Metrics -> to monitor a pc that runs a cluster of docker containers;
+- [Linux PC Metrics](Linux PC Metrics-1606495399737.json) -> to monitor a single pc running a linux system;
+- [Cluster Docker Metrics](Cluster Docker Metrics-1606495389137.json) -> to monitor a pc that runs a cluster of docker containers;
 
 You can import these templates while creating a new dashboard clicking on the "+" icon, then import the template uploading the JSON file.
 
