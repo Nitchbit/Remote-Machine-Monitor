@@ -6,6 +6,6 @@ SystemMonitor is a tool that allows you to monitor several system's metrics. It'
 
 ## [Server](SystemMonitor/Server)
 
-The only component on the server side is grafana, as explained by this [documentation](/server/README.md)
+The only component on the server side is grafana, as explained by this [documentation](SystemMonitor/Server/README.md)
 
 ## [Client](SystemMonitor/Client)
