@@ -12,7 +12,7 @@ This tool is based on a client-server architecture, in which the server monitors
 
 ## Client
 
-The [client](SystemMonitor/Client) rapresent the system to be monitored and is composed by three tools:
+The [client](SystemMonitor/Client) represent the system to be monitored and is composed by three tools:
 - [Promtheus Node Exporter](https://github.com/prometheus/node_exporter);
 - [CAdvisor](https://github.com/google/cadvisor);
 - [Prometheus](https://prometheus.io/);
