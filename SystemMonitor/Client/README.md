@@ -10,8 +10,8 @@ You can always choose to install both of them.
 
 ## cAdvisor
 
-cAdvisor is the tool that expose the metrics on the 8080 port by default.
-To start cAdvisor service you need active docker's daemons, and to do as follows:
+cAdvisor is the tool that exposse the metrics on the 8080 port by default.
+To start cAdvisor service you need to active docker's daemons, and to do as follows:
 - open a terminal in the Docker folder;
 - execute the command ```make up_cAdvisor```;
 - if the whole procedure ends without errors you can see cAdvisor service on http://localhost:8080;
@@ -23,7 +23,7 @@ For more details on cAdvisor:
 
 ## Node-Exporter
 
-Node Exporter is a plugin on Prometheus that allow you to expose metrics from a single linux pc on the 9100 port by default.
+Node Exporter is a plugin on Prometheus that allows you to expose metrics from a single linux pc on the 9100 port by default.
 To start Node Exporter service do as follows:
 - open a terminal in the NodeExporter folder;
 - execute ```make up_node_exporter```;
@@ -39,7 +39,7 @@ For more details on Node Exporter:
 Prometheus allows you to scrape the metrics exposed by cAdvisor or Node Exporter. The system provides a default configuration file that is ready to go.
 Make sure to overwrite the configuration file located by /etc/Prometheus/prometheus.yml with this [file](prometheus.yml).
 If you can't find prometheus following the above path, make sure to read the [prometheus documentation](https://prometheus.io/docs/introduction/overview/).
-You can run Prometheus with ```sudo systemctl start prometheus``` and to stop it ```sudo systemctl stop prometheus```.
+You can run Prometheus with ```sudo systemctl start prometheus``` and stop it with ```sudo systemctl stop prometheus```.
 
 ### Prometheus Configuration
 The correct functioning of the architecture is based on the syncronization between Grafana's query and the Prometheus configuration.
