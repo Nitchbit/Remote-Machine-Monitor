@@ -7,13 +7,13 @@ SystemMonitor is a tool that allows you to monitor several system's metrics. It'
 ![Architecture](projectImage.jpg)
 
 
-## [Server](SystemMonitor/Server)
+## Server
 
-The only component on the server side is grafana, as explained by this [document](SystemMonitor/Server/README.md). Grafana is reachable from anywhere, at the address and port specified, as long as you made it accessible outside your local network.
+The only component on the server side is grafana, as explained by this [document](SystemMonitor/Server). Grafana is reachable from anywhere, at the address and port specified, as long as you made it accessible outside your local network.
 
-## [Client](SystemMonitor/Client)
+## Client
 
-The client rappresent the system to be monitored, is composed by three tools:
+The [client](SystemMonitor/Client) rappresent the system to be monitored, is composed by three tools:
 - [Prometheus](SystemMonitor/Client/README.md)
 - [Promtheus Node Exporter and/or cAdvisor](SystemMonitor/Client/README.md)
 - [Docker containers](SystemMonitor/Client/README.md)
