@@ -12,16 +12,16 @@ This tool is based on a client-server architecture, in which the server monitors
 
 ## Client
 
-The [client](SystemMonitor/Client) represent the system to be monitored and is composed by three tools:
+The [client](SystemMonitor/Client) represents the system to be monitored and is composed by three tools:
 - [Promtheus Node Exporter](https://github.com/prometheus/node_exporter);
 - [CAdvisor](https://github.com/google/cadvisor);
 - [Prometheus](https://prometheus.io/);
 
-The first one, Prometheus Node Exporter, allows to expose hardware and OS metrics. It is written in Go and in this project is used to monitor the machine in which it is intalled.
+The first one, Prometheus Node Exporter, allows to expose hardware and OS metrics. It is written in Go and in this project is used to monitor the machine in which it is installed.
 
-The second one, cAdvisor, is a docker's image created by Google that provides container users an understanding of the resource usage and performance characteristics of their running containers.
+The second one, cAdvisor, is a docker's image created by Google that provides container users an understanding of the resources usage and performance characteristics of their running containers.
 
-The last one, Prometheus, scraps information from the previous two and stores them. Prometheus is reachable from everywhere thanks to the exposure of the port to the web, in this project used by Grafana(see below).  
+The last one, Prometheus, scrapes informations from the previous two and stores them. Prometheus is reachable from anywhere thanks to the exposure of the port to the web, in this project it's used by Grafana (see below).  
 
 ## Server
 
