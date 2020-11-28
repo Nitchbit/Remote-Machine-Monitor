@@ -25,7 +25,8 @@ The last one, Prometheus, scraps information from the previous two and stores th
 
 ## Server
 
-The main component on the [server](SystemMonitor/Server) side is [Grafana](https://grafana.com/). 
+The main component on the [server](SystemMonitor/Server) side is [Grafana](https://grafana.com/).
+
 Grafana is the most popular technology used to compose observability dashboards with everything. 
 In this project Grafana uses informations scaped by Prometheus and creates SystemMonitor's dashboards for analisys of the main components of remote machines.
 
