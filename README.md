@@ -6,7 +6,7 @@ SystemMonitor is a tool designed for private and company, with lots of remote ma
 
 SystemMonitor allows you to monitor several system's metrics. It's compatible with cluster of Docker's containers running on linux and with systems debian-based.
 
-This tool is based on a client-server architecture, in which the client is the system to be monitored and by the server side you can monitor the clients, through metrics and graphs.
+This tool is based on a client-server architecture, in which the server monitors the clients through metrics and graphs.
 
 ![Architecture](projectImage.jpg)
 
