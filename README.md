@@ -2,7 +2,7 @@
 
 ## [SystemMonitor](SystemMonitor)
 
-SystemMonitor is a tool designed for private and company, with lot of remote machine that always have to be monitored. Is possible to monitor the devices wherever you are, only need an internet connection.
+SystemMonitor is a tool designed for private and company, with lots of remote machine that always have to be monitored. Is possible to monitor the devices wherever you are, only need an internet connection.
 
 SystemMonitor allows you to monitor several system's metrics. It's compatible with cluster of Docker's containers running on linux and with system debian-based.
 
