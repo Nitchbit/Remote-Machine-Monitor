@@ -31,3 +31,8 @@ Grafana is the most popular technology used to compose observability dashboards 
 In this project Grafana uses informations scaped by Prometheus and creates SystemMonitor's dashboards for analisys of the main components of remote machines.
 
 It is reachable from anywhere and any device, at the address and port specified, as long as you made it accessible outside your local network. 
+
+The second component server side is a plugin for Grafana, [grafana-image-render](https://grafana.com/grafana/plugins/grafana-image-renderer) need to setup the alerting channel based on Telegram.
+
+The alerts are settable as you prefer quickly and easly directly from Grafana interface. Grafana will send alerts whenever a value from Prometheus breaks the threshould setted by the user. The alerts will arrive directly on your device with Telegram installed above, with a snap of the situation on the remote machine.
+
