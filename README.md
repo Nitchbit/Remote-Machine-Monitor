@@ -1,6 +1,6 @@
 # Remote Machine Monitor
 
-SystemMonitor is a tool designed for private and company, with lots of remote machines that always have to be monitored. It's possible to monitor devices wherever you are, the only thing you need is an internet connection.
+System Machine Monitor is a tool designed for private and company, with lots of remote machines that always have to be monitored. It's possible to monitor devices wherever you are, the only thing you need is an internet connection.
 
 SystemMonitor allows you to monitor several system's metrics. It's compatible with cluster of Docker's containers running on linux and with systems debian-based.
 
