@@ -1,6 +1,4 @@
-# Tumino - Sergi
-
-## [SystemMonitor](SystemMonitor)
+# Remote Machine Monitor
 
 SystemMonitor is a tool designed for private and company, with lots of remote machines that always have to be monitored. It's possible to monitor devices wherever you are, the only thing you need is an internet connection.
 
